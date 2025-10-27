@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/Img/Fondo.jpg");
+  background-image: url("Img/Fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
@@ -24,7 +24,7 @@ header {
   gap: 4rem;
   padding: 2rem;
   background-color: rgb(36, 128, 208);
-  background-image: url("/Img/BannerA.jpg");
+  background-image: url("Img/BannerA.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
