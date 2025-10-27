@@ -1,53 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-image: url("/Img/Fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: black;
+  line-height: 1.6;
 }
 
 header {
   position: sticky;
-  background-color: rgb(36, 128, 208);
+  top: 0;
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
-  gap: 8rem;
-  padding-top: 2rem;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  background-color: rgb(36, 128, 208);
   background-image: url("/Img/BannerA.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
-main {
-  font-size: 20px;
-  display: flex;
-  padding-top: 2rem;
-  padding-left: 2rem;
-  color: black;
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 8px;
 }
-
-main article {
-  padding-bottom: 1rem;
-}
-
-/*
-header div {
-  
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  height: 100%; 
-
-}*/
 
 .TextB {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: larger;
   color: white;
-  font-family: "arial";
-  flex-direction: column;
-  align-items: flex-start;
+}
+
+main {
+  display: flex;
   justify-content: center;
+  padding: 2rem;
+  font-size: 20px;
+}
+
+main article {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+article h1 {
+  color: rgb(36, 128, 208);
+  margin-top: 2rem;
+  border-bottom: 2px solid rgb(36, 128, 208);
+  padding-bottom: 4px;
+  font-size: 1.4rem;
+}
+
+article h2 {
+  color: #0078ff;
+  margin-top: 1rem;
+}
+
+article p,
+article ul,
+article pre {
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+button {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background-color: rgb(36, 128, 208);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  header {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .TextB {
+    align-items: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  main article {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  header img {
+    width: 90px;
+    height: 90px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  article h1 {
+    font-size: 1.2rem;
+  }
+
+  article {
+    padding: 1rem;
+  }
 }
