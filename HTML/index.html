@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 5</title>
+    <link rel="stylesheet" href="/CSS/Style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/Img/Mundo.png" alt="Imagen no encontrada" />
+      <div class="TextB">
+        <h1>Tarea 5</h1>
+        <p>
+          Esta tarea se enfoca en aprender JavaScript, viendo conceptos acerca
+          de bucles y diferentes técnicas para el manejo de datos
+        </p>
+
+        <p>Autor: Brandon Andrés Corella Ulate</p>
+      </div>
+    </header>
+    <main>
+      <article>
+        <h1>Control de flujo y manejo de errores</h1>
+        <pre>
+Para el manejo de errores, nuestro profesor nos recomendó investigar y comprender los siguientes conceptos:</pre
+        >
+
+        <ul>
+          <li>if...else</li>
+          <li>switch</li>
+          <li>try/catch/throw</li>
+          <li>Objetos Error</li>
+        </ul>
+        <p>Por lo que decidí hacer lo siguiente:</p>
+
+        <h1>Para el caso de los if:</h1>
+        <h2>Verificar edad</h2>
+        <input type="number" id="edad" placeholder="Ingrese su edad" />
+        <button id="btnVerificar">Verificar</button>
+        <p id="resultado"></p>
+
+        <h1>Para el caso de los Try-Catch hice algo similar:</h1>
+        <input type="text" id="numero" placeholder="Escribe un número" />
+        <button id="btnCalcular">Calcular inverso</button>
+        <p id="salida"></p>
+
+        <h1>
+          Para el caso de los switch, aprendí a utilizar listas desplegables
+        </h1>
+
+        <p>Selecciona tu fruta favorita:</p>
+
+        <select id="cmbFrutas">
+          <option value="manzana">Manzana</option>
+          <option value="banana">Banana</option>
+          <option value="naranja">Naranja</option>
+          <option value="otra">Otra</option>
+        </select>
+
+        <button id="btnVerFruta">Ver fruta</button>
+        <p id="mensajeFruta"></p>
+        <h1>Para el caso de Bucles e iteración</h1>
+
+        <p>Generar lista de frutas con <strong>for</strong>:</p>
+        <ul id="listaFrutasFor"></ul>
+        <button id="btnFor">Generar lista</button>
+
+        <p>Generar contador con <strong>while</strong>:</p>
+        <ul id="listaWhileBtn"></ul>
+        <button id="btnWhile">Generar contador</button>
+
+        <p>Generar contador con <strong>do...while</strong>:</p>
+        <ul id="listaDoWhileBtn"></ul>
+        <button id="btnDoWhile">Generar contador</button>
+
+        <h1>Para el caso de las Funciones</h1>
+        <p>Calcula la suma de dos números:</p>
+        <input type="number" id="num1" placeholder="Número 1" />
+        <input type="number" id="num2" placeholder="Número 2" />
+        <button id="btnSumar">Sumar</button>
+        <p id="resultadoSuma"></p>
+
+        <h1>Para el caso de Expresiones y operadores</h1>
+
+        <p>Verificar si un número es positivo, negativo o cero:</p>
+        <input type="number" id="numCheck" placeholder="Escribe un número" />
+        <button id="btnCheck">Verificar</button>
+        <p id="resultadoCheck"></p>
+
+        <h1>Para Math:</h1>
+        <p>Generar un número aleatorio del 1 al 100:</p>
+        <button id="btnRandom">Generar número</button>
+        <p id="resultadoRandom"></p>
+
+        <h1>PARA EL CASO DE NUM SE HIZO AUTOMATICO EN CONSOLA DE LA PAGINA</h1>
+
+        <h1>PARA EL CASO DE DATE</h1>
+        <p>Mostrar fecha y hora actual:</p>
+        <button id="btnFecha">Mostrar fecha</button>
+        <p id="resultadoFecha"></p>
+
+        <h1>PARA EL CASO DE FORMATEO DE TEXTO</h1>
+        <p>Manipulación de texto:</p>
+        <input type="text" id="textoInput" placeholder="Escribe algo aquí" />
+        <button id="btnProcesar">Procesar</button>
+        <p id="resultadoTexto"></p>
+
+        <h1>PARA EL CASO CON ARRAY</h1>
+        <p>Lista de frutas interactiva:</p>
+        <ul id="listaFrutasArray"></ul>
+        <input type="text" id="nuevaFruta" placeholder="Agregar fruta" />
+        <button id="btnAgregar">Agregar fruta</button>
+
+        <h1>
+          ARRAY TIPADO: A diferencia del otro, solo almacena un tipo de dato y
+          NO tienen métodos como push/pop
+        </h1>
+
+        <h1>PARA EL CASO DE ENCONTRAR POR DOM ID</h1>
+        <p id="parrafoID">Soy un párrafo con ID</p>
+        <button id="btnID">Cambiar color por ID</button>
+
+        <h1>PARA EL CASO DE ENCONTRAR POR DOM Nombre de Etiqueta</h1>
+
+        <p>Primer párrafo</p>
+        <p>Segundo párrafo</p>
+        <button id="btnTag">Cambiar color párrafos</button>
+
+        <h1>PARA EL CASO DE ENCONTRAR POR DOM Nombre de CLASE</h1>
+        <p class="resaltado">Párrafo 1</p>
+        <p class="resaltado">Párrafo 2</p>
+        <button id="btnClase">Cambiar color clase</button>
+
+        <h1>PARA EL CASO DE ENCONTRAR POR DOM SELECTORES CSS</h1>
+        <p id="pQuery">Párrafo con selector CSS</p>
+        <p class="pQueryAll">Párrafo 1 selectorAll</p>
+        <p class="pQueryAll">Párrafo 2 selectorAll</p>
+        <button id="btnQuery">Cambiar color querySelector</button>
+        <button id="btnQueryAll">Cambiar color querySelectorAll</button>
+
+        <h1>PARA EL CASO DE ENCONTRAR POR DOM COLECCIONES DE OBJETOS HTML</h1>
+
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <button id="btnColeccion">Resaltar items</button>
+      </article>
+    </main>
+    <footer></footer>
+
+    <script src="/JS/JavaScript.js"></script>
+  </body>
+</html>
